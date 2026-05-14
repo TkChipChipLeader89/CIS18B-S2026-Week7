@@ -24,6 +24,7 @@ public class WorkerTask implements Runnable {
             startGate.await();
             for (int step = 1; step <= steps; step++) {
                 Thread.sleep(delayMillis);
+                System.out.println(workerName + "completed step" + step);
             }
             synchronized (completionLog) {
                 completionLog.add(workerName + " finished " + steps + " steps");
