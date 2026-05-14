@@ -15,5 +15,8 @@ public class RaceConditionDemo {
         System.out.println("Unsafe count: " + unsafe);
         System.out.println("Synchronized count: " + safe);
         System.out.println("Atomic count: " + atomic);
+
+        System.out.println("Sychronized time: " + (syncEnd - syncStart));
+        System.out.println("Atomic Time: " + (atomicEnd -atomicStart));
     }
 }
