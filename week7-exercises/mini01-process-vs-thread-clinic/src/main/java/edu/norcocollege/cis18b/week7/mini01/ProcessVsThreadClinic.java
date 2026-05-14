@@ -32,7 +32,7 @@ public class ProcessVsThreadClinic {
             ), 
             new Scenario(
                 "discord-voice-chat",
-                "Play voice audio while messages and notifications continue updating."
+                "Play voice audio while messages and notifications continue updating.",
                 Recommendation.THREAD,
                 "Threads allow the app to handle audio and UI task concurrently using shared memory efficiently."
             )
