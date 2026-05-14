@@ -29,6 +29,12 @@ public class ProcessVsThreadClinic {
                 "Sort one in-memory list and print it immediately.",
                 Recommendation.NOT_MEANINGFULLY_CONCURRENT,
                 "There is only one task, so concurrency adds complexity without benefit."
+            ), 
+            new Scenario(
+                "discord-voice-chat",
+                "Play voice audio while messages and notifications continue updating.",
+                Recommendation.THREAD,
+                "Threads allow the app to handle audio and UI task concurrently using shared memory efficiently."
             )
         );
     }
